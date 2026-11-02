@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prime Movers | Stress-Free Moves Made Simple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{--p:#41558a;--p2:#5b73ae;--accent:#e8eefc;--bg:#fff;--soft:#f6f6f8;--ink:#1f2937;--mut:#6b7280;--line:#e8e8ee;--dark:var(--p);--card:#fff;--sh:0 4px 18px rgba(20,22,28,.08)}
+[data-theme=dark]{--p:#6f86c4;--bg:#0f1115;--soft:#171a21;--ink:#f1f2f5;--mut:#9aa1ad;--line:#262a33;--dark:#f1f2f5;--card:#171a21;--sh:0 4px 18px rgba(0,0,0,.4)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.5}
+a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+section{padding:28px 0}
+.c{text-align:center}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.05;font-weight:800;letter-spacing:-1.5px}
+h2{font-size:clamp(22px,3vw,30px);font-weight:700;letter-spacing:-.5px;line-height:1.2}
+.tag,.eyebrow{font-size:10px;font-weight:600;letter-spacing:1.2px;color:var(--mut);margin-bottom:6px}
+.tag.c{margin-bottom:4px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:600;font-size:13px;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:.2s}
+.btn.sm{padding:9px 16px;font-size:12px;margin-top:10px}
+.btn-dark{background:var(--p);color:#fff}.btn-dark:hover{background:#2c3040}
+[data-theme=dark] .btn-dark{background:#fff;color:var(--p)}
+.btn-out{border-color:var(--ink);background:none;color:var(--ink);margin:0}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--p);border-radius:30px;padding:6px 20px 6px 6px}
+.ico{width:34px;height:34px;border-radius:50%;background:var(--p);color:#fff;display:grid;place-items:center;font-size:12px}
+.full{width:100%;justify-content:center}
+.card{background:var(--card);border-radius:14px;box-shadow:var(--sh)}
+
+.topbar{background:var(--p);color:#fff;font-size:11px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:8px;padding-bottom:8px}
+.tb-l{display:flex;gap:26px;flex-wrap:wrap}.tb-l i{margin-right:6px}.tb-r{display:flex;gap:14px}
+
+.hdr{background:var(--bg);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:64px}
+.logo{display:flex;align-items:center;gap:8px}.logo>i{font-size:34px}
+.logo span{display:flex;flex-direction:column;line-height:1.1}.logo b{font-size:19px;font-weight:700}.logo small{font-size:7.5px;font-weight:600;color:var(--mut)}
+nav{display:flex;gap:30px;font-weight:500;font-size:13px}
+nav a{padding:6px 0;border-bottom:2px solid transparent}nav a.active,nav a:hover{border-color:var(--ink)}
+nav i{font-size:9px;margin-left:3px}
+.hdr-r{display:flex;align-items:center;gap:18px}
+.theme{background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:6px 12px;font-size:12px;cursor:pointer;color:var(--ink)}
+.burger{display:none;background:none;border:0;font-size:22px;cursor:pointer;color:var(--ink)}
+
+.hero{padding:0;background:linear-gradient(90deg,#fff 0%,#fff 35%,#eef0f4 100%),#fff;position:relative;overflow:hidden}
+[data-theme=dark] .hero{background:linear-gradient(90deg,#0f1115,#1b1f28)}
+.hero::after{content:"\f0d1";font-family:"Font Awesome 6 Free";font-weight:900;position:absolute;right:26%;bottom:-10px;font-size:300px;color:rgba(20,22,28,.07);line-height:1}
+.hero-in{display:grid;grid-template-columns:1.25fr 1fr;gap:30px;align-items:center;padding-top:44px;padding-bottom:44px;position:relative;z-index:2}
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--ink);font-size:9.5px;margin-bottom:14px}
+.eyebrow::after{content:"";height:1px;width:50px;background:var(--ink)}
+.lead{margin:16px 0 22px;max-width:360px;font-size:14px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.quote{background:#fff;border-radius:14px;padding:22px;box-shadow:0 10px 40px rgba(0,0,0,.12);color:var(--p)}
+.quote h3{font-size:17px;margin-bottom:12px}
+.quote input,.quote select,.quote textarea{width:100%;padding:10px 12px;border:1px solid #e6e6ec;border-radius:7px;font:inherit;font-size:12px;background:#fff;color:#444}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.quote textarea{resize:none;margin-bottom:14px}
+.quote .btn{border-radius:8px}
+
+.stats{background:var(--soft);padding:18px 0;border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stats div{display:flex;align-items:center;justify-content:center;gap:12px;border-right:1px solid var(--line)}.stats div:last-child{border:0}
+.stats i{font-size:24px}.stats p{display:flex;flex-direction:column;line-height:1.2}.stats b{font-size:16px;font-weight:700}.stats small{font-size:9px;color:var(--mut)}
+
+.about{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:26px;align-items:center;padding-top:14px}
+.ph{background:linear-gradient(135deg,#cfd3da,#9aa1ad);border-radius:14px;position:relative}
+.about-img{height:310px;background:linear-gradient(135deg,#d9d3c9,#8d94a0)}
+.badge{position:absolute;top:0;right:0;background:#fff;border-radius:0 14px 0 14px;padding:10px 14px;display:flex;align-items:center;gap:6px;color:var(--p);box-shadow:var(--sh)}
+.badge b{font-size:42px;font-weight:800;line-height:1}.badge span{font-size:11px;font-weight:600;line-height:1.2}
+.about-txt h2{margin-bottom:10px}.about-txt>p:not(.tag){font-size:11.5px;color:var(--mut)}
+.checks{margin:14px 0}.checks li{font-size:11.5px;margin:4px 0}.checks i{margin-right:6px}
+.about-rev{padding:26px;background:var(--soft)}
+.q{font-size:30px}.qt{font-size:14px;font-weight:500;margin:10px 0}.stars{font-size:17px;letter-spacing:2px;margin-bottom:6px}
+.about-rev small{display:block;color:var(--mut);font-size:11px}
+.rev-f{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font-size:10px;color:var(--mut);gap:8px;flex-wrap:wrap}
+
+.why-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:14px}
+.why-grid .card{padding:16px 10px;text-align:center}
+.why-grid i{font-size:22px;margin-bottom:6px}.why-grid b{display:block;font-size:12px;line-height:1.2}.why-grid small{font-size:9.5px;color:var(--mut);display:block;margin-top:6px;line-height:1.3}
+
+#services h2{margin-bottom:14px}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px 12px;margin-bottom:6px}
+.svc{display:flex;align-items:center;gap:10px;padding:5px 10px 5px 5px;border-radius:8px;background:var(--card);box-shadow:var(--sh);font-size:11px;font-weight:600;line-height:1.2;transition:.2s}
+.svc:hover{transform:translateY(-2px)}
+.svc .th{width:68px;height:40px;border-radius:5px;flex:none;background:linear-gradient(135deg,#c9ccd3,#7f8794)}
+.svc span{flex:1}.svc i{width:20px;height:20px;border-radius:50%;background:var(--dark);color:var(--bg);display:grid;place-items:center;font-size:8px;flex:none}
+#services .c{margin-top:6px}
+
+.cover{display:grid;grid-template-columns:1.1fr 1fr .9fr 1.1fr;grid-template-areas:"t m c s";gap:20px;align-items:center}
+.cv-txt{grid-area:t}.cv-txt h2{margin-bottom:8px}.cv-txt p:not(.tag){font-size:11.5px;color:var(--mut)}
+.map{grid-area:m;height:150px;display:grid;place-items:center;font-size:90px;color:#cfd2d8}
+.cities{grid-area:c;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cities li{background:var(--card);border-radius:7px;padding:6px 10px;font-size:11px;font-weight:500;box-shadow:var(--sh)}.cities i{margin-right:6px}
+.cv-stat{padding:18px 10px;text-align:center}.cv-stat i{font-size:22px;display:block}.cv-stat b{font-size:20px;display:block}.cv-stat small{font-size:10px;color:var(--mut)}
+.cover{grid-template-areas:"t m c s2";}
+.cover .cv-stat:nth-of-type(1){grid-area:auto}
+
+.slider{display:flex;align-items:center;gap:12px;margin-top:14px}
+.track-wrap{overflow:hidden;flex:1}.track{display:flex;transition:transform .45s}
+.rv{flex:0 0 25%;padding:0 6px}
+.rv .card{padding:12px;font-size:11px;height:100%}
+.rv-h{display:flex;align-items:center;gap:10px}.av{width:38px;height:38px;border-radius:50%;background:#e2e4e9;color:var(--p);display:grid;place-items:center;font-weight:700;font-size:13px}
+.rv b{font-size:12px;display:block}.rv .s{color:#f5a623;font-size:11px;letter-spacing:1px}
+.rv p{margin-top:6px;font-size:10.5px;color:var(--mut)}
+.arr{width:34px;height:34px;border-radius:50%;background:var(--p);color:#fff;border:0;cursor:pointer;flex:none}
+.dots{display:flex;justify-content:center;gap:5px;margin-top:10px}.dots i{width:5px;height:5px;border-radius:50%;background:#c9ccd3;cursor:pointer}.dots i.on{background:var(--ink)}
+
+#blogs h2{margin-bottom:12px}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.bl{border-radius:10px;overflow:hidden;background:var(--card);box-shadow:var(--sh)}
+.bl .im{height:90px;position:relative;background:linear-gradient(135deg,#d6cfc4,#8c93a0)}
+.bl .dt{position:absolute;left:10px;bottom:6px;background:var(--p);color:#fff;font-size:9px;padding:3px 10px;border-radius:12px}
+.bl div.t{padding:8px 10px;font-size:11px;font-weight:600}.bl small{display:block;font-size:10px;margin-top:6px;font-weight:600}
+
+.cta{background:var(--p);color:#fff;border-radius:14px;padding:26px 36px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:6px}
+.cta h3{font-size:19px}.cta p{font-size:11px;color:#c5c9d2;margin-top:4px}
+.cta-b{display:flex;gap:14px;flex-wrap:wrap}
+.btn-line{border:1px solid #fff;color:#fff;border-radius:30px;padding:11px 28px}
+.btn-white{background:#fff;color:var(--p);border-radius:30px;padding:11px 24px}
+
+footer{padding-top:24px;position:relative;margin-top:10px}
+.foot{display:grid;grid-template-columns:1fr 1.3fr 1.3fr 1fr;gap:30px;padding-bottom:26px}
+.soc{display:flex;gap:14px;font-size:22px;margin-top:14px}
+footer h4{font-size:12px;margin-bottom:10px}footer li{font-size:10px;margin-bottom:9px;color:var(--ink)}
+footer li i{margin-right:6px;font-size:10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.copy{background:var(--p);color:#fff;font-size:9px;padding:14px 0;margin-top:6px}.copy .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.top{position:absolute;right:20px;top:26px;width:30px;height:30px;border-radius:50%;background:var(--p);color:#fff;border:0;cursor:pointer}
+
+@media(max-width:1024px){
+ .why-grid{grid-template-columns:repeat(3,1fr)}.svc-grid{grid-template-columns:repeat(2,1fr)}
+ .about{grid-template-columns:1fr 1fr}.about-rev{grid-column:1/-1}
+ .cover{grid-template-columns:1fr 1fr;grid-template-areas:none}.cover>*{grid-area:auto!important}
+ .rv{flex-basis:50%}.foot{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+ nav{position:absolute;top:64px;left:0;right:0;background:var(--bg);flex-direction:column;gap:0;padding:8px 20px;border-bottom:1px solid var(--line);display:none}
+ nav.open{display:flex}nav a{padding:12px 0}.burger{display:block}
+ .hdr-r .btn{display:none}
+ .hero-in{grid-template-columns:1fr}.hero::after{right:-40px;opacity:.6}
+ .stats .wrap{grid-template-columns:1fr 1fr;gap:16px}.stats div:nth-child(2){border:0}
+ .blog-grid{grid-template-columns:1fr}.tb-l a:nth-child(n+3){display:none}
+}
+@media(max-width:560px){
+ .about{grid-template-columns:1fr}.about-img{height:240px}
+ .why-grid{grid-template-columns:1fr 1fr}.svc-grid{grid-template-columns:1fr}
+ .grid2{grid-template-columns:1fr}.rv{flex-basis:100%}.cover{grid-template-columns:1fr}
+ .foot{grid-template-columns:1fr}.cta{padding:22px}.copy .wrap{flex-direction:column}.top{top:-16px}
+ .tb-l{gap:12px}.tb-l a:nth-child(2){display:none}
+}
+
+
+/* ===== Refined light theme ===== */
+body{font-size:15px}
+.topbar{background:var(--p2)}
+.hdr{box-shadow:0 2px 14px rgba(65,85,138,.08);border-bottom:0}
+.logo>i{color:var(--p)}
+nav a{font-size:14px;color:#374151}nav a.active,nav a:hover{color:var(--p);border-color:var(--p)}
+.btn{border-radius:10px;box-shadow:0 4px 12px rgba(65,85,138,.18)}
+.btn:hover{transform:translateY(-1px)}
+.btn-dark{background:linear-gradient(135deg,var(--p),var(--p2))}
+.btn-dark:hover{background:linear-gradient(135deg,#364878,var(--p))}
+.btn-out{box-shadow:none;border-color:var(--p);color:var(--p)}
+.btn-ghost{box-shadow:none}.ico{background:var(--p)}
+.hero{background:linear-gradient(110deg,#fff 0%,#f3f6fd 55%,#e4ecfb 100%)}
+.hero::after{display:none}
+.truck{position:absolute;left:34%;bottom:28px;width:min(460px,38vw);z-index:1;filter:drop-shadow(0 12px 18px rgba(65,85,138,.18))}
+.hero-in{padding-top:56px;padding-bottom:56px}
+h1{color:#1f2a44;font-size:clamp(36px,5vw,60px)}
+.lead{font-size:16px;color:#4b5563}
+.quote{border:1px solid #e6ebf6;box-shadow:0 18px 50px rgba(65,85,138,.18)}
+.quote h3{font-size:19px}
+.quote input,.quote select,.quote textarea{padding:12px;font-size:13px;border-color:#dfe5f1}
+.quote input:focus,.quote select:focus,.quote textarea:focus{outline:2px solid #c9d6f5;border-color:var(--p2)}
+.stats{background:#fff;box-shadow:0 6px 24px rgba(65,85,138,.08);position:relative;z-index:3}
+.stats i{color:var(--p);background:var(--accent);width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:20px}
+.stats b{font-size:19px}.stats small{font-size:11px}
+section{padding:40px 0}
+.tag,.eyebrow{color:var(--p2);font-size:11px;font-weight:700}
+.eyebrow::after{background:var(--p2)}
+h2{color:#1f2a44;font-size:clamp(24px,3vw,34px)}
+.about-txt>p:not(.tag){font-size:14px}.checks li{font-size:14px;margin:7px 0}.checks i{color:var(--p2)}
+.about-rev{background:linear-gradient(160deg,#fff,#f3f6fd);border:1px solid #e6ebf6}
+.q{color:var(--p2)}.qt{font-size:16px;line-height:1.55}.stars{color:#f5a623}
+.about-img,.ph{background:linear-gradient(135deg,#dbe5fa,#a9bde6);display:grid;place-items:center;overflow:visible}
+.about-img::before{content:"\f4ce";font-family:"Font Awesome 6 Free";font-weight:900;font-size:90px;color:rgba(255,255,255,.75)}
+.badge b{color:var(--p)}
+.why-grid .card{padding:22px 12px;border:1px solid #edf0f7;transition:.25s}
+.why-grid .card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(65,85,138,.15)}
+.why-grid i{color:var(--p);background:var(--accent);width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin:0 auto 10px;font-size:22px}
+.why-grid b{font-size:14px}.why-grid small{font-size:12px}
+.svc{padding:8px 12px 8px 8px;font-size:13px;border:1px solid #edf0f7;border-radius:10px}
+.svc:hover{box-shadow:0 10px 24px rgba(65,85,138,.15)}
+.svc .th{width:56px;height:48px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:var(--p)}
+.svc .th::before{content:"\f4de";font-family:"Font Awesome 6 Free";font-weight:900;font-size:18px}
+.svc i{background:var(--p);color:#fff}
+.cv-txt p:not(.tag){font-size:14px}
+.map{color:#c7d5f3;font-size:110px}
+.cities li{font-size:13px;border:1px solid #edf0f7}.cities i{color:var(--p2)}
+.cv-stat{padding:22px 12px;border:1px solid #edf0f7}.cv-stat i{color:var(--p);font-size:26px;margin-bottom:6px}.cv-stat b{font-size:24px;color:#1f2a44}.cv-stat small{font-size:12px}
+.rv .card{padding:16px;border:1px solid #edf0f7}.rv b{font-size:14px}.rv p{font-size:13px}
+.av{background:var(--accent);color:var(--p)}
+.arr{background:var(--p)}.arr:hover{background:var(--p2)}
+.dots i.on{background:var(--p)}
+.bl{border:1px solid #edf0f7;transition:.25s}.bl:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(65,85,138,.15)}
+.bl .im{height:130px;background:linear-gradient(135deg,#dbe5fa,#a9bde6);display:grid;place-items:center}
+.bl .im::before{content:"\f466";font-family:"Font Awesome 6 Free";font-weight:900;font-size:44px;color:rgba(255,255,255,.8)}
+.bl .dt{background:var(--p);font-size:11px}
+.bl div.t{font-size:14px;padding:12px 14px}.bl small{font-size:12px;color:var(--p)}
+.cta{background:linear-gradient(120deg,var(--p),var(--p2));padding:34px 44px;box-shadow:0 14px 34px rgba(65,85,138,.25)}
+.cta h3{font-size:24px}.cta p{font-size:14px;color:#e4ecfb}
+.btn-white{color:var(--p)}
+footer{background:#f3f6fd;margin-top:30px;padding-top:36px}
+footer h4{font-size:15px;color:#1f2a44}footer li{font-size:13px}footer li a:hover{color:var(--p)}
+footer li i,.soc a{color:var(--p)}
+.copy{background:#e4ecfb;color:#374151;font-size:12px}
+.top{background:var(--p)}
+@media(max-width:820px){.truck{position:relative;left:0;bottom:0;display:block;margin:20px auto 0;width:80%}.hero{padding-bottom:10px}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <div class="tb-l">
+    <a href="mailto:sales@primemovers.demo"><i class="fa-solid fa-envelope"></i> sales@primemovers.demo</a>
+    <a href="tel:0500000001"><i class="fa-solid fa-phone"></i> 0500 000 001</a>
+    <a href="tel:0500000002"><i class="fa-solid fa-phone"></i> 0500 000 002</a>
+    <a href="tel:8000000"><i class="fa-solid fa-phone"></i> 800-0000</a>
+  </div>
+  <div class="tb-r"><a href="#"><i class="fa-brands fa-facebook"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+</div></div>
+
+<header class="hdr"><div class="wrap hdr-in">
+  <a href="#" class="logo"><i class="fa-solid fa-house-chimney-window"></i><span><b>Prime Movers</b><small>Stress-Free Moves Made Simple</small></span></a>
+  <nav id="nav">
+    <a href="#" class="active">Home</a><a href="#about">About Us</a>
+    <a href="#services">Services <i class="fa-solid fa-chevron-down"></i></a>
+    <a href="#blogs">Blogs</a><a href="#contact">Contact Us</a>
+  </nav>
+  <div class="hdr-r">
+    <button class="theme" id="theme" aria-label="Toggle theme"><i class="fa-solid fa-sun"></i> / <i class="fa-solid fa-moon"></i></button>
+    <a href="#quote" class="btn btn-dark">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a>
+    <button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</div></header>
+
+<section class="hero">
+  <svg class="truck" viewBox="0 0 420 200" aria-hidden="true"><ellipse cx="210" cy="186" rx="190" ry="8" fill="#000" opacity=".08"/><rect x="10" y="30" width="250" height="125" rx="8" fill="#fff" stroke="#d5dbe8" stroke-width="2"/><rect x="10" y="130" width="250" height="25" fill="#e8eefc"/><text x="135" y="85" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="26" fill="#41558a">Prime Movers</text><text x="135" y="106" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="10" fill="#6b7280">Stress-Free Moves Made Simple</text><path d="M270 70h70l40 45v40H270z" fill="#fff" stroke="#d5dbe8" stroke-width="2"/><path d="M282 82h50l26 30h-76z" fill="#cfe0ff"/><rect x="270" y="140" width="110" height="15" fill="#41558a"/><g fill="#2b3550"><circle cx="85" cy="160" r="20"/><circle cx="165" cy="160" r="20"/><circle cx="330" cy="160" r="20"/></g><g fill="#fff"><circle cx="85" cy="160" r="8"/><circle cx="165" cy="160" r="8"/><circle cx="330" cy="160" r="8"/></g></svg>
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <p class="eyebrow">TRUSTED MOVERS &amp; PACKERS IN DUBAI, SHARJAH &amp; AJMAN</p>
+      <h1>Stress-Free Moves Made Simple</h1>
+      <p class="lead">Professional moving services with care, reliability and complete peace of mind.</p>
+      <div class="hero-btns">
+        <a href="#quote" class="btn btn-dark">Book Your Move Now <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="tel:0500000001" class="btn btn-ghost"><span class="ico"><i class="fa-solid fa-phone"></i></span> Call Us</a>
+      </div>
+    </div>
+    <form class="quote" id="quote">
+      <h3>Get a Free Quote</h3>
+      <div class="grid2">
+        <input type="text" placeholder="Name" required><input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone" required><input type="date" placeholder="Moving Date">
+        <select><option>Moving From</option><option>Dubai</option><option>Sharjah</option><option>Ajman</option><option>Abu Dhabi</option></select>
+        <select><option>Moving To</option><option>Dubai</option><option>Sharjah</option><option>Ajman</option><option>Abu Dhabi</option></select>
+      </div>
+      <textarea rows="2" placeholder="Message..."></textarea>
+      <button class="btn btn-dark full" type="submit">Submit Request <i class="fa-solid fa-arrow-right"></i></button>
+    </form>
+  </div>
+</section>
+
+<section class="stats"><div class="wrap">
+  <div><i class="fa-regular fa-calendar-check"></i><p><b>10+ Years</b><small>Of Experience</small></p></div>
+  <div><i class="fa-solid fa-users"></i><p><b>5000+</b><small>Happy Customers</small></p></div>
+  <div><i class="fa-solid fa-truck-fast"></i><p><b>25,000+</b><small>Moves</small></p></div>
+  <div><i class="fa-solid fa-star"></i><p><b>4.6★</b><small>Google Rating</small></p></div>
+</div></section>
+
+<section class="about wrap" id="about">
+  <div class="about-img ph"><div class="badge"><b>10+</b><span>Years<br>Experience</span></div></div>
+  <div class="about-txt">
+    <p class="tag">ABOUT PRIME MOVERS</p>
+    <h2>Professional Movers &amp; Packers for Over a Decade</h2>
+    <p>Prime Movers is a leading moving company in UAE, dedicated to making your move smooth, safe and stress-free. From homes to offices, we handle it all with professionalism and care.</p>
+    <ul class="checks"><li><i class="fa-solid fa-circle-check"></i> Experienced &amp; Trained Team</li><li><i class="fa-solid fa-circle-check"></i> Safe &amp; Secure Handling</li><li><i class="fa-solid fa-circle-check"></i> On-Time Delivery</li></ul>
+    <a href="#" class="btn btn-dark sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <div class="about-rev card">
+    <i class="fa-solid fa-quote-left q"></i>
+    <p class="qt">“Prime Movers made our relocation in Dubai so easy. The team was professional, punctual and very helpful!”</p>
+    <div class="stars">★★★★★</div>
+    <b>Sarah Ahmed</b><small>Dubai, UAE</small>
+    <div class="rev-f"><span><i class="fa-brands fa-google"></i> Based on 667 Google reviews</span><a href="#" class="btn btn-out sm">Read More</a></div>
+  </div>
+</section>
+
+<section class="why wrap">
+  <p class="tag c">WHY CHOOSE US</p><h2 class="c">Unpack Your Dreams, Not Your Stress</h2>
+  <div class="why-grid" id="why"></div>
+</section>
+
+<section class="wrap" id="services">
+  <p class="tag c">OUR SERVICES</p><h2 class="c">We Handle Every Move - Your Complete Relocation Experts</h2>
+  <div class="svc-grid" id="svc"></div>
+  <div class="c"><a href="#" class="btn btn-dark sm">View All Services <i class="fa-solid fa-arrow-right"></i></a></div>
+</section>
+
+<section class="cover wrap">
+  <div class="cv-txt"><p class="tag">OUR COVERAGE</p><h2>We Cover the Whole United Arab Emirates</h2>
+    <p>From Dubai to Abu Dhabi, Sharjah to Ajman — wherever you are in the UAE, we're here to help.</p>
+    <a href="#" class="btn btn-dark sm">Our Service Areas <i class="fa-solid fa-arrow-right"></i></a></div>
+  <div class="map"><i class="fa-solid fa-map-location-dot"></i></div>
+  <ul class="cities" id="cities"></ul>
+  <div class="cv-stat card"><i class="fa-solid fa-trophy"></i><b>10+ Years</b><small>Of Fulfilling Moving Needs</small></div>
+  <div class="cv-stat card"><i class="fa-solid fa-people-group"></i><b>25,000+</b><small>Moves Expertly Handled</small></div>
+</section>
+
+<section class="wrap">
+  <p class="tag c">OUR TESTIMONIALS</p><h2 class="c">What Our Customers Say</h2>
+  <div class="slider">
+    <button class="arr" id="prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="track-wrap"><div class="track" id="track"></div></div>
+    <button class="arr" id="next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<section class="wrap" id="blogs">
+  <p class="tag c">LATEST BLOGS</p><h2 class="c">Moving Tips &amp; Expert Advice</h2>
+  <div class="blog-grid" id="blog"></div>
+</section>
+
+<section class="wrap"><div class="cta">
+  <div><h3>Ready to Unpack Your New Life?</h3><p>Get a Free Quote Today and let us handle the rest.</p></div>
+  <div class="cta-b"><a href="tel:0500000001" class="btn btn-line"><i class="fa-solid fa-phone"></i> 0500 000 001</a><a href="#quote" class="btn btn-white">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a></div>
+</div></section>
+
+<footer id="contact">
+  <div class="wrap foot">
+    <div><a href="#" class="logo"><i class="fa-solid fa-house-chimney-window"></i><span><b>Prime Movers</b><small>Stress-Free Moves Made Simple</small></span></a>
+      <div class="soc"><a href="#"><i class="fa-brands fa-facebook"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a></div></div>
+    <div><h4>Quick Links</h4><div class="two"><ul><li><a href="#">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#">Our Team</a></li><li><a href="#services">Services</a></li></ul><ul><li><a href="#blogs">Blogs</a></li><li><a href="#contact">Contact</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms &amp; Conditions</a></li></ul></div></div>
+    <div><h4>Our Top Services</h4><div class="two"><ul><li><i class="fa-solid fa-check"></i> Packing &amp; Moving</li><li><i class="fa-solid fa-check"></i> Office Moving</li><li><i class="fa-solid fa-check"></i> Villa Moving</li></ul><ul><li><i class="fa-solid fa-check"></i> Corporate Relocation</li><li><i class="fa-solid fa-check"></i> Furniture Installation</li><li><i class="fa-solid fa-check"></i> Warehousing &amp; Storage</li></ul></div></div>
+    <div><h4>Get in Touch</h4><ul><li><i class="fa-solid fa-phone"></i> 0500 000 001</li><li><i class="fa-solid fa-phone"></i> 0500 000 002</li><li><i class="fa-solid fa-phone"></i> 800-0000</li><li><i class="fa-solid fa-envelope"></i> sales@primemovers.demo</li><li><i class="fa-solid fa-location-dot"></i> Dubai &amp; Sharjah, U.A.E.</li></ul></div>
+  </div>
+  <div class="copy"><div class="wrap"><span>© 2024 Prime Movers. All rights reserved.</span><span>Stress-Free Moves Made Simple &nbsp;|&nbsp; Dubai &amp; Sharjah, U.A.E.</span></div></div>
+  <button class="top" id="top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+</footer>
+
+<script>
+const $ = s => document.querySelector(s);
+
+// Why choose us
+const why = [
+  ['shield-halved','Experienced Professionals','Skilled and certified moving experts.'],
+  ['tag','Affordable Pricing','Transparent and competitive rates.'],
+  ['bolt','Quick & Efficient','On-time, hassle-free moving service.'],
+  ['lock','Secure Packing','Your belongings in safe hands.'],
+  ['clock','On-Time Every Time','We value your time.'],
+  ['headset','Dedicated Support','Always here to help.']
+];
+$('#why').innerHTML = why.map(w => `<div class="card"><i class="fa-solid fa-${w[0]}"></i><b>${w[1]}</b><small>${w[2]}</small></div>`).join('');
+
+// Services (add data-img / background-image on .th to use real photos)
+const svc = ['Packing & Moving Services','Residential Moving','Office Moving','Villa Moving','Corporate Relocation','Staff Accommodation Moving','Commercial/Warehouse Moving','IT Equipment Moving','Piano Moving','Fine Arts Moving','Furniture Installation','Warehousing & Storage','Pool Table Moving','Billiards & Snooker Moving','Hotel Furniture Installation','Retail Showroom Moving'];
+$('#svc').innerHTML = svc.map(s => `<a href="#" class="svc"><div class="th"></div><span>${s}</span><i class="fa-solid fa-arrow-right"></i></a>`).join('');
+
+// Cities
+$('#cities').innerHTML = ['Dubai','UAQ','Sharjah','Fujairah','Ajman','Abu Dhabi','RAK','Al Ain'].map(c => `<li><i class="fa-solid fa-location-dot"></i>${c}</li>`).join('');
+
+// Blogs
+const blogs = [['Oct 16, 2024','10 Packing Tips for a Stress-Free Move'],['Oct 10, 2024','How to Choose the Right Moving Company'],['Oct 06, 2024','Prepare Your Home for Moving Day']];
+$('#blog').innerHTML = blogs.map(b => `<a href="#" class="bl"><div class="im"><span class="dt">${b[0]}</span></div><div class="t">${b[1]}<small>Read More <i class="fa-solid fa-arrow-right"></i></small></div></a>`).join('');
+
+// Testimonials slider
+const revs = [['AK','Ahmed Khan','Excellent service! Highly recommended.'],['SM','Sara Malik','Professional and on time.'],['RK','Rizwan Khan','Very happy with the move.'],['DP','Dina Patel','Smooth and stress-free!'],['MA','Mona Ali','Careful team, nothing was damaged.'],['JT','James Todd','Great price and great people.']];
+const track = $('#track'), dots = $('#dots');
+track.innerHTML = revs.map(r => `<div class="rv"><div class="card"><div class="rv-h"><div class="av">${r[0]}</div><div><b>${r[1]}</b><span class="s">★★★★★</span></div></div><p>“${r[2]}”</p></div></div>`).join('');
+let idx = 0;
+const per = () => innerWidth <= 560 ? 1 : innerWidth <= 1024 ? 2 : 4;
+const max = () => revs.length - per();
+function go(i) {
+  idx = i < 0 ? max() : i > max() ? 0 : i;
+  track.style.transform = `translateX(-${idx * (100 / per())}%)`;
+  dots.innerHTML = Array.from({length: max() + 1}, (_, k) => `<i class="${k === idx ? 'on' : ''}" data-i="${k}"></i>`).join('');
+}
+$('#prev').onclick = () => go(idx - 1);
+$('#next').onclick = () => go(idx + 1);
+dots.onclick = e => e.target.dataset.i && go(+e.target.dataset.i);
+addEventListener('resize', () => go(Math.min(idx, max())));
+setInterval(() => go(idx + 1), 5000);
+go(0);
+
+// Mobile menu, theme, back to top
+$('#burger').onclick = () => $('#nav').classList.toggle('open');
+$('#nav').onclick = () => $('#nav').classList.remove('open');
+$('#theme').onclick = () => {
+  const d = document.documentElement;
+  d.dataset.theme = d.dataset.theme === 'dark' ? '' : 'dark';
+};
+$('#top').onclick = () => scrollTo({top: 0, behavior: 'smooth'});
+
+// Quote form
+$('#quote').addEventListener('submit', e => {
+  e.preventDefault();
+  alert('Thank you! We will contact you shortly.');
+  e.target.reset();
+});
+
+</script>
+</body>
+</html> 
